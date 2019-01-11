@@ -11,3 +11,6 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
+  server:
+    renewalPercentThreshold: 0.49
+    eviction-interval-timer-in-ms: 5000
