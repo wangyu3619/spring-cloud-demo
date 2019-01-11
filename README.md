@@ -1,4 +1,4 @@
-# SpringCloud全家桶测试  
+# SpringCloud全家桶
 
 ## 模块结构介绍
 - eureka 注册中心
