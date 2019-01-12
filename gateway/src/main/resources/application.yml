@@ -1,0 +1,29 @@
+server:
+  port: 26002
+
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      routes:
+        - id: account
+          uri: http://localhost:8001
+          serviceId: account
+          predicates:
+            - Path=/a/**
+          filters:
+            - StripPrefix=1
+
+eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 4
+    lease-expiration-duration-in-seconds: 12
+    prefer-ip-address: true
+    metadata-map:
+      zone: ${spring.profiles.active}
+      cluster: ${spring.profiles.active}
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:26001/eureka/
+    prefer-same-zone-eureka: true

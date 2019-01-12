@@ -39,7 +39,7 @@
     <modules>
         <module>eureka</module>
         <module>modules</module>
-        <module>modules</module>
+        <module>gateway</module>
     </modules>
 
 </project>
