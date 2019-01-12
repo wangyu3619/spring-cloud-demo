@@ -7,8 +7,8 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: account
-          uri: http://localhost:8001
+        - id: route_account
+          uri: lb://account
           serviceId: account
           predicates:
             - Path=/a/**
