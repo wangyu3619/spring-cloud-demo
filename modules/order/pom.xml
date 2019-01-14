@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>account</artifactId>
+    <artifactId>order</artifactId>
 
     <build>
         <finalName>${project.artifactId}</finalName>
@@ -20,7 +20,4 @@
             </plugin>
         </plugins>
     </build>
-    <dependencies>
-
-    </dependencies>
 </project>

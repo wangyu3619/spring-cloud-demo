@@ -1,19 +1,18 @@
-package com.example.account;
+package com.example.order;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * @author wangyu
- * 2019/01/11 23:23
+ * 2019/01/14 22:58
  */
 @EnableDiscoveryClient
 @SpringBootApplication
-@EnableFeignClients({"com.example.account.service"})
-public class AccountApplication {
+public class OrderApplication {
     public static void main(String[] args) {
-        SpringApplication.run(AccountApplication.class, args);
+        SpringApplication.run(OrderApplication.class, args);
     }
+
 }
